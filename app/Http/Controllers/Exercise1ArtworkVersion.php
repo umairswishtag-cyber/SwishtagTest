@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-class TestSwishtag extends Controller
+class Exercise1ArtworkVersion extends Controller
 {
       public function store(Request $request)
     {
