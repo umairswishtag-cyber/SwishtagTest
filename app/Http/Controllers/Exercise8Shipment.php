@@ -12,7 +12,14 @@ class Exercise8Shipment extends Controller
         $shipped = $request->input('input.shipped');
 
         $totalshipped = array_sum($shipped);
-    
+    if (!is_numeric($order) || !is_array($shipped) || !array_reduce($shipped, fn($carry, $item) => $carry && is_numeric($item), true)) {
+            return response()->json([
+                "success" => false,
+                "data" => null,
+                "error" => "Invalid input. 'ordered' and 'shipped' values must be numeric."
+            ], 400);
+        }
+
         $remaining = max(0, $order - $totalshipped);
         return response()->json([
             "success" => true,
