@@ -11,6 +11,8 @@ use App\Http\Controllers\Exercise7Inventory;
 use App\Http\Controllers\Exercise8Shipment;
 use App\Http\Controllers\Exercise9Webhook; 
 use App\Http\Controllers\Exercise10QuoteEexpiry;
+use App\Http\Controllers\Ercise11ProductVisibility;
+use App\Http\Controllers\Exercise12BundlePricing;
 
 Route::post('/exercise-1-artwork-version', [App\Http\Controllers\Exercise1ArtworkVersion::class, 'store']);
 Route::post('/exercise-2-tier-pricing', [App\Http\Controllers\Exercise2TierPricing::class, 'getPrice']);
@@ -21,6 +23,8 @@ Route::post('/exercise-6-approval-flow', [ApprovalFlowValidator::class, 'validat
 Route::post('/exercise-7-inventory', [Exercise7Inventory::class, 'reserve']);
 Route::post('/exercise-8-shipment', [Exercise8Shipment::class, 'trackShipment']);
 Route::post('/exercise-9-webhook', [Exercise9Webhook::class, 'handleWebhook']); 
-Route::post('/exercise-10-quote-expiry', [Exercise10QuoteEexpiry::class, 'checkQuoteExpiry']);   
+Route::post('/exercise-10-quote-expiry', [Exercise10QuoteEexpiry::class, 'checkQuoteExpiry']); 
+Route::post('/exercise-11-product-visibility', [Ercise11ProductVisibility::class, 'checkProductVisibility']);
+Route::post('/exercise-12-bundle-pricing', [Exercise12BundlePricing::class, 'calculateBundlePrice']);
 
  
