@@ -25,6 +25,7 @@ Route::post('/exercise-8-shipment', [Exercise8Shipment::class, 'trackShipment'])
 Route::post('/exercise-9-webhook', [Exercise9Webhook::class, 'handleWebhook']); 
 Route::post('/exercise-10-quote-expiry', [Exercise10QuoteEexpiry::class, 'checkQuoteExpiry']); 
 Route::post('/exercise-11-product-visibility', [Ercise11ProductVisibility::class, 'checkProductVisibility']);
-Route::post('/exercise-12-bundle-pricing', [Exercise12BundlePricing::class, 'calculateBundlePrice']);
+Route::post('/exercise-12-bundle-pricing', [Exercise12BundlePricing::class, 'bundlePricing']);
+ 
 
  
