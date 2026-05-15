@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class Exercise13CcartMmerge extends Controller
+class Exercise13CartMerge extends Controller
 {
     public function mergeCart(Request $request)
 
