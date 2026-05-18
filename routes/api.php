@@ -15,6 +15,7 @@ use App\Http\Controllers\Ercise11ProductVisibility;
 use App\Http\Controllers\Exercise12BundlePricing;
 use App\Http\Controllers\Exercise13CartMerge; 
 use App\Http\Controllers\Exercise14Upsell;
+use App\Http\Controllers\Exercise15ShippingRule;
 
 Route::post('/exercise-1-artwork-version', [App\Http\Controllers\Exercise1ArtworkVersion::class, 'store']);
 Route::post('/exercise-2-tier-pricing', [App\Http\Controllers\Exercise2TierPricing::class, 'getPrice']);
@@ -30,6 +31,6 @@ Route::post('/exercise-11-product-visibility', [Ercise11ProductVisibility::class
 Route::post('/exercise-12-bundle-pricing', [Exercise12BundlePricing::class, 'bundlePricing']);
 Route::post('/exercise-13-cart-merge', [Exercise13CartMerge::class, 'mergeCart']);
 Route::post('/exercise-14-upsell', [Exercise14Upsell::class, 'suggestUpsell']);
- 
+Route::post('/exercise-15-shipping-rule', [Exercise15ShippingRule::class, 'shippingRuleEngine']);
 
  
