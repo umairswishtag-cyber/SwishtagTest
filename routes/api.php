@@ -33,4 +33,4 @@ Route::post('/exercise-12-bundle-pricing', [Exercise12BundlePricing::class, 'bun
 Route::post('/exercise-13-cart-merge', [Exercise13CartMerge::class, 'mergeCart']);
 Route::post('/exercise-14-upsell', [Exercise14Upsell::class, 'suggestUpsell']);
 Route::post('/exercise-15-shipping-rule', [Exercise15ShippingRule::class, 'shippingRuleEngine']);
-Route::post('/exercise-16-fraud-check', [Exercise16FraudCheck::class, 'checkFraud']);
+Route::post('/exercise-16-fraud-check', [Exercise16FraudCheck::class, 'fraudCheck']);
