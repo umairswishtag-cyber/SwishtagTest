@@ -54,7 +54,8 @@ class Eexercise17ShopifyPriceAdjustment extends Controller
             'success' => true,
             'data' => [
                 'minimum_operations' => (int)$operations
-            ]
+            ],
+            'error' => null
         ]);
     }
 }
